@@ -1,0 +1,281 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{calc}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{fancyheadings}
+\usepackage{grffile}
+\usepackage[round]{natbib}
+\usepackage{subcaption}
+
+%\usepackage{siunitx}
+%\sisetup{input-symbols=(), group-digits  = false}
+ 
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{rotating}
+%\usepackage{harvard}
+%\usepackage{aer}
+%\usepackage{aertt}
+\usepackage{verbatim}
+\usepackage{array}
+\usepackage{multirow}
+
+\setlength{\voffset}{-0.25in}
+\setlength{\topmargin}{0pt}
+\setlength{\hoffset}{-0.25in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0in}
+\setlength{\marginparsep}{0pt}
+\setlength{\marginparwidth}{0pt}
+\setlength{\marginparpush}{0pt}
+\setlength{\footskip}{.2in}
+\setlength{\textwidth}{7in}
+\setlength{\textheight}{9.4in}
+\setlength{\parskip}{1pc}
+\setlength{\parindent}{0pc}
+
+\renewcommand{\baselinestretch}{1}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\prbf}[1]{\textbf{#1}}
+\newcommand{\prit}[1]{\textit{#1}}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\bdm}{\begin{displaymath}}
+\newcommand{\edm}{\end{displaymath}}
+\newcommand{\script}[1]{\begin{cal}#1\end{cal}}
+%\newcommand{\citee}[1]{\citename{#1} (\citeyear{#1})}
+\newcommand{\citee}[1]{\citet{#1}}
+%\newcommand{\citee}[1]{\citeauthor{#1} (\citeyear{#1})}
+\newcommand{\h}[1]{\hat{#1}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\normal}{\mathcal{N}}
+\newcommand{\app}
+{
+\appendix
+}
+
+\newcommand{\toprule}{\par\vspace*{2pt}\noindent{\hrule\hfill}\par\vspace*{1pt}}
+
+\newcommand{\appsection}[1]
+{
+\section{#1}
+\renewcommand{\theequation}{\thesection\arabic{equation}}
+\setcounter{equation}{0}
+}
+
+
+%\pagestyle{empty}
+%\pagestyle{fancyplain}
+%\lhead{}
+%\chead{Fiscal Policy Uncertainty and Its Macroeconomic Consequences}
+%\rhead{\thepage}
+%\lfoot{}
+%\cfoot{}
+%\rfoot{}
+\pagestyle{plain}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}
+\textbf{CBA Sabbatical Leave Application}\\
+\textbf{Title Page}\\
+\end{center}
+
+\noindent \textbf{Date:} October 7, 2015\\
+\noindent \textbf{Name:} James Murray \\
+\noindent \textbf{Rank:} Associate Professor\\ 
+\noindent \textbf{Department:} Economics\\
+\noindent \textbf{Title of Project:} Proposal to Advance Curriculum and Scholarship in Applied Macroeconometrics  \\
+\noindent \textbf{Requesting:} One-semester Sabbatical for Spring 2017 \\
+
+\noindent \textbf{Faculty member's signature:~~} \line(1,0){170}~~~ \textbf{Date:~~} \line(1,0){80} \\
+
+\noindent \textbf{Chair's signature:~~} \line(1,0){230}~~~ \textbf{Date:~~} \line(1,0){80} \\
+
+\begin{center}\textbf{Abstract of Project:}\end{center}
+
+The purpose of this project is to develop a new course in applied macroeconometrics and further my scholarship in this same field in a manner that can be integrated into the course and also result in submissions of two academic manuscripts to peer-reviewed journals in my discipline.  
+
+The economics department currently offers an undergraduate course in econometrics that is largely focused on applications in \textit{microeconomics}.  I will develop a new course in econometric methods appropriate for applications in \textit{macroeconomics and finance} that could serve as a substitute or a complement to the existing econometrics course.  At the same time, I will continue a research agenda that applies some of the macroeconometric methods from the class.  I propose to write two new papers that measure the magnitude of uncertainty that market participants have regarding the conduct of government policy and the evolution of macroeconomic variables that affect the decisions and livelihood of market participants.  In particular, the papers will investigate the possibility of structural changes in government policy and macroeconomic activity.  Structural change not only presents challenges to econometric estimation, but also creates a new dimension of uncertainty that can contribute to swings macroeconomic activity which cause sudden economic downturns. 
+
+My objective is to incorporate the methods used in the research to the new macroeconometrics class.  These statistical methods are typically only taught at the advanced graduate level, but they can be presented and applied in a way that is appropriate and accessible to our undergraduate students.  Part of my new course development will include a course module on methods for estimating structural changes in time series that will fit near the end of the course's curriculum.  Students in the class will be able to use these methods to inform economic issues that do arise in our undergraduate macroeconomics courses.
+
+\newpage
+
+\begin{center}\textbf{Sabbatical Narrative}\end{center}
+
+\noindent \textbf{1~ Nature and Objectives} 
+
+\noindent The purpose of the sabbatical project is to \textbf{develop a new undergraduate course in applied macroeconometrics} and make significant progress in my ongoing research program that seeks to estimate uncertainty that market participants\footnote{By ``market participant,'' I generally refer to consumers/workers who make decision on saving and employment, and business owners/managers who make decisions on pricing, production levels, and investment in new infrastructure.} have regarding the conduct of economic policy and the evolution of macroeconomic variables that affect market participants' decisions and livelihood.  This research program is directly related to the proposed applied macroeconometrics course as I discuss in more detail below.
+
+The new course in macroeconometrics will have the same prerequisite and starting point as the existing econometrics course, ECO 307: Introductory Econometrics.  From there it will move quickly to methods applicable to macroeconomics and finance.  Course topics will include univariate autoregressive and distributed lag models, forecasting methods for variables with trend and seasonality, conditional heteroskedasticity models, methods that test and correct for non-stationary in time series, cointegration and error correction models for non-stationary time series, reduced form and structural vector autoregression models, and structural change and regime switching methods applied to vector autoregression and distributed lag models.  This last topic is unique for an undergraduate course and are methods that I apply in the research program in this sabbatical proposal.
+
+The course will have an applied emphasis and involve a semester-long empirical research project.  Students will be able to describe the intuition and assumptions behind the statistical methods, be able to choose appropriate methods for their own research questions and scenarios given to them, and use the statistical software package \textit{R} to apply the methods to publicly available financial and macroeconomic data sets to answer a research question.
+
+I will also prepare \textbf{two papers for submission} to peer-reviewed journals in the macroeconomics discipline that focus on economic uncertainty caused by the possibility for structural change.  In one I will estimate the presence and timing of structural changes in the conduct of fiscal policy\footnote{Fiscal policy is defined as government policies and budgetary actions that affect government expenditures, taxes, transfer programs such as Social Security and income assistance programs, and the level of government debt relative to the size of the economy.} in post-war U.S. history.  I will develop a dynamic, stochastic, general equilibrium (DSGE) model that describes consumer and producer behavior and their expectations mechanisms in the presence of possible structural changes in fiscal policy.  I will use the model to predict the economic impact that government policy shocks have in such an environment of uncertainty.
+
+The potential for structural change presents a challenge for market participants.  Market participants base their decisions on expectations of near-future macroeconomic and government policy variables, including inflation, income, tax liability, and government expenditures.  Market participants' expectations can be particularly volatile if they believe a structural change in the near future is possible.  Examples could include a large change in government policy.  Whether or not such structural changes actually occur, the \textit{perceived possibility} of them occurring can create an environment of uncertainty and volatility in expectations.  This alone can trigger swings in macroeconomic activity.  As a precautionary measure, consumers may respond by decreasing their demand for products and services and instead saving more.  Businesses may decide to postpone investment in infrastructure.  Both of these reactions can cause an economic downturn.
+
+In the second paper I will estimate the presence and timing of structural changes in evolution of non-policy macroeconomic variables.  For example, there is an open question in the empirical macroeconomics literature on whether there have been structural changes in the ``natural level of unemployment'' or in potential GDP.  Each of these are theoretical measures for a level where the economy should operate in ``normal'' or ``optimal'' conditions.  If there is a belief that the economy is operating at a ``new normal,'' and will not return to previous ``normal'' conditions, it could significantly change expectations that consumers have of future income and inflation and expectations that businesses have on future demand for their products.  I will again develop a DSGE model that describes the behavior and expectations of market participants and use the model to predict the economic impact of various shocks to the economy in such an environment of uncertainty.
+
+The opportunity to develop the course at the same time I pursue this scholarship will allow me \textbf{integrate the research and the new course curriculum} in a unique way for our students.  The macroeconometric methods used to estimate the presence, timing, and nature of structural changes are typically reserved for advanced graduate courses in macroeconometrics.  Still, with careful thought and preparation of new course materials, these can be presented and applied in a way that is appropriate and accessible to our undergraduate students.  I already have some experience introducing two undergraduate students to some of these advanced topics in independent study research projects.  Included in the new course, I plan to develop a two-week course module that builds the intuition behind these methods and shows students how these methods can be applied to data using \textit{R}, an open-source statistics / econometrics software package.  The module materials will include class lecture materials, handouts explaining the procedures, \textit{R} tutorials that walk students though applications of the methods to the data, and in-class and out-of-class exercises.  
+
+\textbf{2~ Relationship to field of expertise}
+
+The proposed research is part of my ongoing research agenda on uncertainty and structural change.  I have published and working papers that involve issues related to structural changes in macroeconomic and labor market data.  In \citee{herromurray}, we measure market participants' expectations and level of uncertainty in an environment where structural changes in U.S. monetary policy\footnote{Monetary policy are actions taken by a country's central bank to influence interest rates or the quantity of money in circulation in order to achieve macroeconomic objectives, usually related to controlling inflation, or influencing spending and the level of economic activity.} are possible.  In one of my current working papers (\citee{murray}), I estimate market participants' expectations and level of uncertainty regarding fiscal policy in an environment where structural changes are possible.  I have incorporated lessons from \citee{herromurray} and \citee{murray} into my courses including ECO 305: Intermediate Macroeconomics and ECO 301: Money and Banking.  In \citee{haupertmurray}, we apply the methods of identifying structural changes and measuring its timing and nature to a very different application: the evolution of the Major League Baseball labor market.
+
+Regarding my teaching specialties, I currently (Fall 2015) teach the existing econometrics course, ECO 307: Introductory Econometrics, and I regularly teach ECO 301: Money and Banking and ECO 305: Intermediate Macroeconomics.  The research papers and new course on applied macroeconometrics complement very well my existing responsibilities.
+
+\textbf{3~ Value to UW-L Curriculum}
+
+The current econometrics course is an elective in the CBA economics major, and one from a menu of courses that satisfy the CLS economics major and CBA finance major requirements.  At the conclusion of the sabbatical, I will work with the economics and finance departments to formally include the new macroeconometrics course as another option to fulfill these requirements.  The new course will fit nicely into the finance major curriculum, and it will be useful substitute for students majoring in economics that have a strong interest in macroeconomics.  Completing both the existing econometrics course and the new macroeconometrics course could also be very useful for students who are interested in pursuing graduate work in economics or finance or for students who are preparing for careers involving actuarial work or financial and economic forecasting.
+
+We presently teach ECO 307 every fall semester.  I have discussed the possibility with my department chair and the other econometrics instructors of offering \textit{an econometrics} course with the same frequency, but trading off with some regularity the current econometrics course with the new macroeconometrics course.  The existing econometrics instructors welcomed this idea and my department chair expressed an open mind.  This trade-off will be more feasible if we are able to make the two courses replacements of each other in terms of fulfilling requirements for economics and finance majors.
+
+\textbf{4~ Exceptional workload necessitating a sabbatical}
+
+Developing a new macroeconometrics course that is accessible to our undergraduate students will take significant preparation beyond what is typical.  Undergraduate econometric textbooks introduce macroeconometric methods late in the texts, building on material that is taught in our current undergraduate econometrics class.  It would not be feasible at UW-L to offer a macroeconometrics course that required the current econometrics course as a prerequisite.  The purpose of the sabbatical work would be to develop materials that make these more advanced topics accessible to undergraduate students.  This will involve developing a significant number of materials, including instructor authored-lessons to replace or accompany a textbook, written \textit{R} tutorials to demonstrate using statistical software to apply the methods to data, undergraduate-accessible reading lists, classroom activities, and homework assignments.
+
+The course will be enhanced with an ability to pursue the related research program at the same time I prepare the new curriculum.  Methods and lessons from the research will be incorporated into the course, and provide a very unique and valuable experience for our students.  Without teaching and service time reassigned to this project, it would not be feasible to make progress on these three closely tied projects.
+
+\textbf{5~ Department coverage}
+
+Coverage for my Spring 2017 courses can come from adjunct or overload coverage if financial resources are available.  If not, coverage would come from my colleagues taking on additional students or course sections without compensation.  As in the past when we vote on sabbatical proposals, voting members understand that approval implies the possibility of being asked to cover the extra teaching workload without additional compensation.  I have also expressed willingness to pick up additional students or sections if there is a sabbatical proposals for Fall 2016 or anytime after my return.
+
+There are instructors in my department with experiencing teaching all of the courses I commonly teach.  In Spring semesters I typically teach two sections of ECO 120: Global Macroeconomics, and one section of ECO 305 or ECO 301.  Professors Sheida Temouri and Taggert Brooks both have experience teaching the 300-level courses, and about half of the department members regularly teach ECO 120.
+
+\textbf{6~ Measurable Outcomes and Dissemination}
+
+The following outcomes can be used to evaluate the success of the sabbatical project:
+\bi
+\item A complete set of course materials that are sufficient to offer a section of applied macroeconometrics in Fall 2017.
+\item A manuscript submitted to a peer-reviewed journal in the macroeconomics discipline tentatively titled, ``Macroeconomic Consequences of Fiscal Uncertainty in an Environment of Regime Switching Policy.''
+\item A manuscript submitted to a peer-reviewed journal in the macroeconomics discipline tentatively titled, ``Are Structural Changes in Macroeconomic Activity Forecastable?  Implications of uncertainty on the macroeconomy.''
+  \ei
+
+\textbf{7~ Budget}
+
+I only need re-assigned time to dedicate to the project.  I do not forsee incurring any expenses such as for materials, travel, software, or related items.  Funding request = \$0.00. 
+  
+\begin{singlespace}
+\bibliographystyle{apalike}
+\bibliography{sabbatical}
+\end{singlespace}
+
+\newpage
+\setlength{\parskip}{0pc}
+
+\begin{center} 
+\textbf{\Large{James Murray}}\\
+\textbf{Curriculum Vitae (Abbreviated)}\\
+\textbf{(Updated \today)}\end{center}
+\small 
+
+\textbf{Contact Information} \toprule
+\hspace*{-0.5pc}\begin{tabular}{p{3.4in} p{3in}}
+University of Wisconsin - La Crosse\newline
+Department of Economics \newline
+1725 State St. \newline
+La Crosse, WI  54601
+&
+Phone (office): (608)785-5140\newline
+Phone (mobile): (608)406-4068\newline
+E-mail: \texttt{jmurray@uwlax.edu}\newline
+Web: \texttt{http://www.murraylax.org}
+\end{tabular} \\ \\
+
+\textbf{Education} \toprule
+\hspace*{-0.5pc}\begin{tabular}{p{.5in} p{.6in} p{2.5in} p{2in}}
+Ph.D. & Economics, & Indiana University & September 2008 \\
+M.A. & Economics, & Indiana University & May 2004  \\
+M.A. & Economics, & University of Notre Dame & May 2002 \\
+B.S. & Economics, & University of Wisconsin - La Crosse & May 2000 \\
+\end{tabular} \\ \\
+
+\textbf{Employment} \toprule
+\hspace*{-0.5pc}\begin{tabular}{p{1.5in} p{1.7in} p{1.5in}}
+Associate Professor & U. Wisconsin La Crosse & July 2013 - present \\
+Assistant Professor & U. Wisconsin La Crosse & August 2009 - June 2013 \\
+Assistant Professor & Viterbo University & August 2008 - May 2009 \\
+\end{tabular} \\ \\
+
+\textbf{Courses Taught} \toprule
+\begin{tabular}{p{3.25in}p{3in}}
+\textit{University of Wisconsin - La Crosse:}
+\bd   \setlength\itemsep{0pc}
+\item ECO 120: Global Macroeconomics
+\item ECO 301: Money and Banking
+\item ECO 305: Intermediate Macroeconomics
+\item ECO 307: Introductory Econometrics
+\item ECO 400: Monetary Theory and Policy
+\item BUS 230: Business and Economic Research and Communication
+\item BUS 735: Business Decision Making and Research Methodology
+\ed
+&
+\textit{Viterbo University:}
+\bd \setlength\itemsep{0pc}
+\item ECO 101: Introductory Microeconomics
+\item ECO 102: Introductory Macroeconomics
+\item ECO 610: Global Business Cycles
+\item MTH 130: Introductory Statistics
+\item MGMT 230: Managerial Statistics
+\item MGMT 560: Management and Decision Sciences
+\item MGMT 652 Integrative Research Project II
+\ed
+\end{tabular}
+
+\textbf{Peer Reviewed Publications} \toprule
+\bd
+\item ``A Life Insurance Deterrent to the Spread of HIV and AIDS in Africa,'' with Pedro de Araujo, (2015), forthcoming in \textit{Journal of Policy Modeling}.
+\item ``Developing Students' Thought Processes for Choosing Appropriate Statistical Methods,'' with Elizabeth Knowles, (2014), \textit{Journal of Education for Business} 89(8): 389-395.
+\item ``Dynamics of Monetary Policy Uncertainty and the Impact on the Macroeconomy,'' with Michael Herro, (2013), \textit{Economics Bulletin}, 33(1): 257-270.
+\item ``Pencasts for Introductory Macroeconomics,'' (2012), \textit{Journal of Economic Education}, 43(2): 348.
+\item ``Regime Switching and Wages in Major League Baseball under the Reserve Clause,'' with Michael Haupert, (2012), \textit{Cliometrica}, 6(2) 143-162.
+\item ``Channels for Improved Performance From Living on Campus,'' with Pedro de Araujo, (2010), \textit{American Journal of Business Education}, 3(12): 57-64.
+\item ``Estimating the Effects of Dormitory Living on Student Performance,'' with Pedro de Araujo, (2010), \textit{Economics Bulletin}, 30(1): 866-878.
+\item ``Shirking in Major League Baseball in the Era of the Reserve Clause,'' with Glenn Knowles, Michael Haupert, and Keith Sherony, (2001), \textit{Nine: A Journal of Baseball History and Social Policy Perspectives,}  Volume 9. \\
+\ed
+
+\textbf{Working Papers} \toprule
+\bd
+\item ``Fiscal Policy Uncertainty and Its Macroeconomic Consequences''
+\item ``Information-seeking Behavior of Undergraduate Students'' with Sloan Komissarov.
+\item ``Growth and Risky Sexual Behavior with Conditional Cash Transfers'' with Pedro de Araujo. 
+\ed
+
+\textbf{Non-Refereed Publications} \toprule
+\bd
+\item ``Of Mice and Men: Using a Book Club to Improve Teaching and Learning,'' with Kathryn Birkeland, Betsy Knowles, and Laurie Strangman, \textit{The Teaching Professor}, December 2010.
+\item ``Expectations for Monetary Policy,'' \textit{Business Connection,}  April 2008. \\ 
+\ed
+
+\textbf{Research Grants} \toprule
+\bd
+\item UW-L CBA Research Grant, ``Identifying Regime Switching in Adaptive Expectations: Its Causes and Consequences'' (\$3,000), Summer 2013.
+\item UW-L Faculty Research Grant, ``Labor Markets and Adaptive Expectations'' (\$4,000), Summer 2012.
+\item UW-L, College of Business Administration Research Grant for project, ``Fiscal and Expenditure Multipliers with Adaptive Expectations,'' (\$3,000), Summer 2011.
+\item UW-L Faculty Research Grant, ``Academic Benefits of Living on Campus: A look at Peer Influences and Utilization of University Provided Resources,'' (\$3,511), Summer 2010. 
+\ed
+
+\textbf{Curriculum and Pedagogy Grants} \toprule
+\bd
+\item UW-L CATL Lesson Study Grant (co-principal with Nabamita Dutta), ``Lesson Study: Integrating Mathematical Reasoning to Authentic Economic Scenarios,'' (\$1,000), July 2014 - June 2015.
+\item Kazanjian Economics Foundation (external, co-principal with John Nunley), ``Pencast Lessons for Advanced Undergraduate Economics Courses,'' (\$34,032), June 2013 - June 2014.
+\item UW-L CATL Online Instructor Training 2, \$500, Summer 2013.
+\item UW-L Curricular Redesign Grant (principal investigator and including Nabamita Dutta, Lisa Giddings, Michael Haupert, Wahhab Khandker, Glenn Knowles, and John Nunley), ``Integrating the Economics Curriculum Through a Unified Emphasis on Critical Thinking and Communication,'' (\$20,000), July 2012 - June 2013.
+\item UW-L Faculty Development Grant to support developing external grant proposals (co-principal with John Nunley), (\$5,000), December 2012 - May 2013.
+\item UW-L CATL Lesson Study Grant (with Taggert Brooks, Elizabeth Knowles, Bryan Kopp, and Laurie Strangman), ``Efficient and Effective Feedback: Lesson Study Investigating Feedback on Students’ Writing'', (\$2,500), July 2012 - June 2013.
+\item UW-L Lesson Study Grant for project, ``Lesson Study: Developing Students' Thought Processes For Choosing Appropriate Statistical Methods,'' (\$1,000), July 2011 - June 2012.
+\item UW-L Online Education Grant to develop an online course for ECO 120: Global Macroeconomics, (\$3,000), March 2011 - August 2011.
+\ed
+
+\end{document}

@@ -1,0 +1,161 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{calc}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{fancyheadings}
+\usepackage{grffile}
+\usepackage[round]{natbib}
+\usepackage{subcaption}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black},
+}
+%\usepackage{siunitx}
+%\sisetup{input-symbols=(), group-digits  = false}
+ 
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{rotating}
+%\usepackage{harvard}
+%\usepackage{aer}
+%\usepackage{aertt}
+\usepackage{verbatim}
+\usepackage{array}
+\usepackage{multirow}
+
+\setlength{\voffset}{0in}
+\setlength{\topmargin}{0pt}
+\setlength{\hoffset}{0in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0in}
+\setlength{\marginparsep}{0pt}
+\setlength{\marginparwidth}{0pt}
+\setlength{\marginparpush}{0pt}
+\setlength{\footskip}{.2in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\parskip}{1pc}
+\setlength{\parindent}{0pc}
+
+\renewcommand{\baselinestretch}{1}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\prbf}[1]{\textbf{#1}}
+\newcommand{\prit}[1]{\textit{#1}}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\bdm}{\begin{displaymath}}
+\newcommand{\edm}{\end{displaymath}}
+\newcommand{\script}[1]{\begin{cal}#1\end{cal}}
+%\newcommand{\citee}[1]{\citename{#1} (\citeyear{#1})}
+\newcommand{\citee}[1]{\citet{#1}}
+%\newcommand{\citee}[1]{\citeauthor{#1} (\citeyear{#1})}
+\newcommand{\h}[1]{\hat{#1}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\normal}{\mathcal{N}}
+\newcommand{\app}
+{
+\appendix
+}
+
+\newcommand{\toprule}{\par\vspace*{2pt}\noindent{\hrule\hfill}\par\vspace*{1pt}}
+
+\newcommand{\appsection}[1]
+{
+\section{#1}
+\renewcommand{\theequation}{\thesection\arabic{equation}}
+\setcounter{equation}{0}
+}
+
+
+%\pagestyle{empty}
+%\pagestyle{fancyplain}
+%\lhead{}
+%\chead{Fiscal Policy Uncertainty and Its Macroeconomic Consequences}
+%\rhead{\thepage}
+%\lfoot{}
+%\cfoot{}
+%\rfoot{}
+\pagestyle{plain}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}
+\textbf{CBA Sabbatical Leave Final Report}\\
+\end{center}
+
+\noindent \textbf{Date:} September 28, 2017\\
+\noindent \textbf{Name:} James Murray \\
+\noindent \textbf{Rank:} Associate Professor\\ 
+\noindent \textbf{Department:} Economics\\
+\noindent \textbf{Title of Project:} Proposal to Advance Curriculum and Scholarship in Applied Econometrics  \\
+\noindent \textbf{One Semester Sabbatical:} Spring 2017 \\
+
+\textbf{Purpose}
+
+The purpose of the sabbatical was to develop curriculum for a new course in applied macroeconometrics and support new research in an application of applied macroeconomics: estimating macroeconomic uncertainty arising from structural change in economic policy. In addition to the original goals, I developed a significant amount of new curriculum for ECO 230: Business and Economic Research and Communication, continued mentoring students, and continued several service responsibilities for the university.
+
+\textbf{Teaching}
+
+I spent several weeks learning new technologies related to statistical software and coding package, R, to incorporate into my econometrics and research methods classes. While I was previously familiar with R programming syntax and concepts, I learned how to use several new tools and developed methods for incorporating these tools into my classes.
+
+One of these tools is the \texttt{ggplot} package, a data visualization package built on the grammar of graphics.  I took self-paced courses on \url{http://www.datacamp.com} to both learn the technology and the theory for the grammar of graphics. The grammar of graphics is a framework for understanding how plots are designed and constructed.  I took what I learned and developed the applied R tutorials below which I introduced to my ECO 230 students in Fall 2017. I created these tutorials considering specifically the goals and student population in ECO 230. These are not merely tutorials on using technology. The focus is on the learning goals of our courses, to teach applied statistical methods, and doing so with examples using real data and applying the R technology.
+
+\bi
+\itemsep0em 
+\item Grammar of graphics:\\ \url{http://murraylax.org/rtutorials/gog.html}
+\item Bar Plots:\\ \url{http://murraylax.org/rtutorials/barplots.html}
+\item Anscombe's Quartet:\\ \url{http://murraylax.org/rtutorials/anscombe.html}
+\ei
+
+I developed a number of other applied statistics tutorials for ECO 230 on univariate and bivariate statistics, including the following:
+
+\bi
+\itemsep0em 
+\item Introduction to Data:\\ \url{http://murraylax.org/rtutorials/data.html}
+\item Estimating the Sample Mean:\\ \url{http://murraylax.org/rtutorials/one_sample.html}
+\item Median and Interpolated Median:\\ \url{http://murraylax.org/rtutorials/medians.html}
+\item Estimating the Median:\\ \url{http://murraylax.org/rtutorials/one_sample_median.html}
+\item Difference in Means for Independent Samples:\\ \url{http://murraylax.org/rtutorials/two_means.html}
+\item Difference in Means for Paired Samples:\\ \url{http://murraylax.org/rtutorials/two_means_paired.html}
+\item Difference in Medians for Independent Samples:\\ \url{http://murraylax.org/rtutorials/two_medians.html}
+\item Difference in Median for Paired Samples:\\ \url{http://murraylax.org/rtutorials/two_medians_paired.html}
+\item Correlation:\\ \url{http://murraylax.org/rtutorials/correlation.html}
+\item Chi-Square Test of Independence:\\ \url{http://murraylax.org/rtutorials/chisqindep.html}
+\ei
+
+I also learned new tools in R to apply to a new course in macroeconometrics.  I took a self-paced course in DataCamp on manipulating time series data, familiarized myself with tools to estimate Markov-regime switching models using the \texttt{MSwM} package, devised strategies for incorporating these methods into an advanced undergraduate econometrics course. I also prepared class notes on unit root tests, autoregression, vector autoregression, autoregressive moving average models, and error correction models. I have completed enough work to be ready to teach a new course in applied macroeconometrics whenever there is demand and department resources allow it.
+
+\textbf{Advising and Mentoring}
+
+I spend my sabbatical time on campus and continued serving students through advising and mentoring.  I advised one internship for graduating senior Colt Lang and continued mentoring an undergraduate student project for freshman James Lanska as part of the Eagle Apprenticeship program.
+
+\textbf{Research}
+
+I made significant progress on a new paper, ``Regime Switching in Fiscal Debt Targets and Policy Functions in the United States,'' presented the work at the Midwest Economics Research Group 2017 annual conference, and am preparing to present at the Southern Economic Association 2017 annual conference.  In this work, I discover evidence for regime switching in fiscal policy in three dimensions: policy volatility, long-run debt levels, and a switch to a larger role for government expenditures policy to stabilize the business cycle and a lower role for tax policy.
+
+An incomplete working version of the paper is available here:\\ \url{http://murraylax.org/research/fiscalswitch.pdf}
+
+The presentation slides for the Midwest Economics Research Group is available here:\\ \url{http://murraylax.org/research/fiscalswitch_merg.pdf}
+
+While I sabbatical, I also applied and was awarded a CBA Research Grant.  For this work I produced a paper, ``Predictors for Growth Mindset and Sense of Belonging in College Students.'' I submitted this work to the \textit{Studies in Higher Education}. This paper is available here: \url{http://murraylax.org/research/mindset.pdf}
+
+\textbf{Service}
+
+Despite being on sabbatical, I continued some service responsibilities.  At the request of the CBA Dean, I participated in the January 2017 College of Business Administration all-college meeting, updating the college on progress made by Graduate Curriculum Committee on revising parts of the MBA program. Through my sabbatical semester, I also continued performing my full duties as a member of the Faculty Senate General Education Assessment Committee. Finally, I continued to perform my full duties on the Economic Department Promotion, Retention, and Tenure committee, which included drafting a retention letter for one of our non-tenured department members.
+
+
+\end{document}
